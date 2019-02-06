@@ -4,24 +4,23 @@ namespace ConsoleApp5
 {
     class Program
     {
+        int i;
         static void Main(string[] args)
         {
-         
 
 
-                MethodA();
-                Console.WriteLine();
-            }
-            public void MethodA()
+
+            MethodA();
+        }
+        public static void MethodA()
+        {
+            while (Peanut())
             {
-                int i;
-                while (Peanut())
+
+                Console.WriteLine(" i is {0}", i);
+                if (i > 10)
                 {
-                    Console.WriteLine("i is{0},"i);
-                    if (i > 10)
-                    {
-                        return;
-                    }
+                    return;
                 }
 
             }
@@ -32,5 +31,5 @@ namespace ConsoleApp5
             i++;
             return true;
         }
-
     }
+}
